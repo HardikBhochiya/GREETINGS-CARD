@@ -14,92 +14,6 @@ body {
     text-align: center;
 }
 
-/* NAVIGATION BAR */
-#nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: rgba(255, 255, 255, 0.15);
-    padding: 15px 30px;
-    margin: 20px auto;
-    border-radius: 10px;
-    width: 90%;
-    max-width: 1200px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    position: sticky;
-    top: 10px;
-    z-index: 1000;
-}
-
-#nav .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #85944a;
-    text-decoration: none;
-}
-
-#nav .menu {
-    display: flex;
-    gap: 20px;
-}
-
-#nav .menu a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 600;
-    font-size: 16px;
-    padding: 8px 12px;
-    transition: all 0.3s ease;
-    border-radius: 5px;
-}
-
-#nav .menu a:hover {
-    background-color: #85944a;
-    color: #fff;
-}
-
-#logo img {
-    height: 45px;
-    width: auto;
-    object-fit: contain;
-    background-color: transparent;
-    border: none;
-    box-shadow: none;
-    display: block;
-    margin: 0;
-    padding: 0;
-    mix-blend-mode: multiply;
-}
-
-
-.navbar {
-    display: flex;
-    gap: 30px;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 600;
-    font-size: 16px;
-    padding: 10px 15px;
-    transition: all 0.3s ease;
-    border-radius: 5px;
-}
-
-.navbar a:hover {
-    background-color: #85944a;
-    color: #fff;
-}
-
-/* Push content below fixed nav */
-#fake {
-    height: 60px;
-    width: 100%;
-    background: white;
-}
-
 /* MAIN SECTION */
 #maindiv {
     height: calc(100vh - 60px);
@@ -150,19 +64,19 @@ body {
 h1 {
     font-size: 2.5rem;
     letter-spacing: 1.5px;
-    color: #85944a;
+    color: #efa645;
     animation: textSlide 1.5s ease-out;
     text-align: center;
     padding: 0 10px;
 }
 
-/* Animation */
+/* Animation */ 
 @keyframes textSlide {
     0% { transform: translateY(-50px); opacity: 0; }
     100% { transform: translateY(0); opacity: 1; }
 }
 
-/* Responsive Design */
+/* Responsive Design - Main content */
 @media (max-width: 768px) {
     #maindiv {
         flex-direction: column;
@@ -178,14 +92,5 @@ h1 {
 
     h1 {
         font-size: 2rem;
-    }
-
-    .navbar {
-        gap: 15px;
-    }
-
-    .navbar a {
-        font-size: 14px;
-        padding: 8px 10px;
     }
 }
