@@ -1,138 +1,48 @@
-/* Reset and Base Styles */
+/* CONTACT PAGE STYLES (without navbar) */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Poppins', sans-serif;
-    background: url('background.jpg') no-repeat center center fixed;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(frontpagebackground.jpg);
     background-size: cover;
-    color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  /* Overlay for readability */
-  body::before {
-    content: '';
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* Dark overlay */
-    z-index: -1;
-  }
-  
-#nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
-    padding: 15px 40px;
-    margin-top: 20px;
-    border-radius: 12px;
-    width: 100%;
-    max-width: 1200px;
-    backdrop-filter: blur(15px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-#nav a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 600;
-    margin-left: 20px;
-    font-size: 1.1rem;
-    transition: all 0.3s ease;
-}
-
-#nav a:hover {
-    color: #00ffff;
-    transform: scale(1.1);
-}
-
-#nav img {
-    height: 50px;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-}
-
-  
-  #logo img {
-    height: 50px;
-    border-radius: 8px;
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
-  }
-  
-  .navbar a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 600;
-    margin-left: 25px;
-    font-size: 1.1rem;
-    transition: 0.3s ease;
-  }
-  
-  .navbar a:hover {
-    color: #00ffff;
-    transform: scale(1.1);
-  }
-  
-  /* Spacer */
-  #fake {
-    height: 30px;
-  }
-  
-  /* Heading */
-  h1 {
-    font-size: 3rem;
-    margin-top: 50px;
-    background: linear-gradient(to right, #00f2fe, #4facfe);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    padding-top: 60px;
+    color:skyblue;
     text-align: center;
-  }
-  
-  /* Contact Info Box */
-  p {
-    background: rgba(255, 255, 255, 0.15);
-    padding: 20px 30px;
-    border-radius: 16px;
-    font-size: 1.2rem;
-    font-weight: 500;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-    max-width: 600px;
-    margin: 20px auto;
-    text-align: center;
-    color: #ffffff;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    #nav {
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 15px 20px;
-    }
-  
-    .navbar {
-      margin: 10px 0;
-    }
-  
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    color: burlywood;
+    margin-bottom: 20px;
+    animation: slideIn 1s ease-out;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+@keyframes slideIn {
+    0% { transform: translateY(-20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+@media (max-width: 768px) {
     h1 {
-      font-size: 2.2rem;
+        font-size: 2rem;
     }
-  
+
     p {
-      font-size: 1rem;
-      padding: 15px 20px;
+        font-size: 1rem;
     }
-  }
-  
+}
