@@ -8,14 +8,10 @@
     left: 0;
     display: flex;
     align-items: center;
-    padding: 0 40px;
+    justify-content: space-between;
+    padding: 0 30px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-}
-
-
-#logo {
-    margin-right: auto;
 }
 
 #logo img {
@@ -46,26 +42,14 @@
     border-radius: 5px;
 }
 
-.navbar a:hover {
+.navbar a:hover,
+.navbar a.active {
     background-color: #5d85cb;
     color: #fff;
 }
 
-/* Push content below fixed nav */
 #fake {
     height: 60px;
     width: 100%;
     background: white;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .navbar {
-        gap: 15px;
-    }
-
-    .navbar a {
-        font-size: 14px;
-        padding: 8px 10px;
-    }
 }

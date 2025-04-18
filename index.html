@@ -1,48 +1,74 @@
+<!-- ✅ Updated index.html with scrollbar hidden and god-level layout -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Greetify</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="navbar.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greetify</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-
-  <!-- Navigation -->
-  <div id="nav">
-    <div id="logo"><img src="Greetify.jpg" alt="Greetify Logo" /></div>
-    <div class="navbar">
-      <a href="index.html">HOME</a>
-      <a href="contact.html">CONTACT US</a>
-      <a href="about.html">ABOUT</a>
-      <a href="festivals.html">FESTIVALS</a>
+    <!-- Navbar -->
+    <div id="nav">
+        <div id="logo"><img src="Greetify.jpg" alt="Greetify Logo"></div>
+        <div class="navbar">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT US</a>
+            <a href="festivals.html">FESTIVALS</a>
+        </div>
     </div>
-  </div>
+    <div id="fake"></div>
 
-  
-  <!-- Main Content -->
-  <div id="maindiv">
-    <div id="sentence">
-      <h1>"Where beautiful words meet beautiful hearts - welcome to Greetify"</h1>
-    </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>"Where beautiful words meet beautiful hearts"</h1>
+    </section>
 
-    <div id="photos">
-      <div id="one" class="photo-container">
-        <a href="diwali.html"><img src="diwaliicon.jpeg" alt="Diwali"></a>
-        <a href="navaratri.html"><img src="navaratriicon.jpeg" alt="Navaratri"></a>
-        <a href="holi.html"><img src="holiicon.jpeg" alt="Holi"></a>
-        <a href="birthday.html"><img src="birthdayicon.jpeg" alt="Birthday"></a>
-      </div>
-      
-      <div id="two" class="photo-container">
-        <a href="uttarayan.html"><img src="uttarayanicon.jpeg" alt="Uttarayan"></a>
-        <a href="rakshabandhan.html"><img src="rakshabandhanicon.jpeg" alt="Raksha Bandhan"></a>
-        <a href="ganeshchaturthi.html"><img src="ganeshchaturthiicon.jpeg" alt="Ganesh Chaturthi"></a>
-        <a href="janmashtmy.html"><img src="janmashtmiicon.jpeg" alt="Janmashtmi"></a>
-      </div>
-    </div>
-  </div>
+    <!-- Festival Greetings -->
+    <section class="section">
+        <h1>Festival Greetings</h1>
+        <div class="photo-grid">
+            <div class="grid-row">
+                <a href="diwali.html"><img src="diwaliicon.jpeg" alt="Diwali"></a>
+                <a href="navaratri.html"><img src="navaratriicon.jpeg" alt="Navaratri"></a>
+                <a href="holi.html"><img src="holiicon.jpeg" alt="Holi"></a>
+                <a href="uttarayan.html"><img src="uttarayanicon.jpeg" alt="Uttarayan"></a>
+            </div>
+            <div class="grid-row">
+                <a href="rakshabandhan.html"><img src="rakshabandhanicon.jpeg" alt="Raksha Bandhan"></a>
+                <a href="ganeshchaturthi.html"><img src="ganeshchaturthiicon.jpeg" alt="Ganesh Chaturthi"></a>
+                <a href="janmashtmy.html"><img src="janmashtmiicon.jpeg" alt="Janmashtmi"></a>
+                <a href="chritsmas.html"><img src="christmas.jpg" alt="Birthday"></a>
+            </div>
+        </div>
+    </section>
 
+    <!-- Personal Greetings -->
+    <section class="section personal-section">
+        <h1>Personal Greetings</h1>
+        <div class="photo-grid">
+            <div class="grid-row">
+                <a href="anniversary.html"><img src="anniversary.jpg" alt="Anniversary"></a>
+                <a href="marriege.html"><img src="marriage.jpg" alt="Marriage"></a>
+                <a href="achievements.html"><img src="achievements.jpg" alt="Achievement"></a>
+                <a href="birthday.html"><img src="birthdayicon.jpeg" alt="Birthday"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="mailto:contact@greetify.com"><i class="fas fa-envelope"></i></a>
+            <a href=""><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="copyright">
+            © 2024-25 Greetify. All rights reserved.
+        </div>
+    </footer>
 </body>
 </html>
