@@ -6,16 +6,18 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow-y: auto;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    overflow-y: scroll; /* 👈 ensures scrolling is enabled */
+    -ms-overflow-style: none; /* IE/Edge */
+    scrollbar-width: none;    /* Firefox */
     color: #333;
     background-color: #f7f9fb;
 }
 
+/* For Chrome, Safari and Opera */
 body::-webkit-scrollbar {
-    display: none;
+    display: hidden;
 }
+
 
 section {
     min-height: 100vh;
