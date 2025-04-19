@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f8f9fc;
+    color: #333;
+  }
+  
+  #fake {
+    height: 60px;
+  }
+  
+  .page-title {
+    text-align: center;
+    font-size: 36px;
+    color: #2c3e50;
+    margin: 40px 20px;
+  }
+  
+  /* Block style */
+  .festival-block {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin-bottom: 50px;
+  }
+  
+  .festival-block.reverse {
+    flex-direction: column-reverse;
+  }
+  
+  /* Sub sections */
+  .festival-image, .festival-text {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Image style */
+  .festival-image img {
+    max-height: 90%;
+    max-width: 90%;
+    object-fit: contain;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .festival-image img:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Text style */
+  .festival-text {
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  .festival-text h2 {
+    font-size: 28px;
+    color: #34495e;
+    margin-bottom: 15px;
+  }
+  
+  .festival-text p {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #555;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .festival-block {
+      height: auto;
+    }
+  
+    .festival-image, .festival-text {
+      height: auto;
+      flex-direction: column;
+      padding: 20px 10px;
+    }
+  
+    .festival-text p {
+      font-size: 16px;
+      padding: 0 10px;
+    }
+  }
+  

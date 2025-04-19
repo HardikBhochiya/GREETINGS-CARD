@@ -1,0 +1,55 @@
+/* NAVIGATION BAR */
+#nav {
+    height: 60px;
+    width: 100%;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#logo img {
+    height: 45px;
+    width: auto;
+    object-fit: contain;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+    mix-blend-mode: multiply;
+}
+
+.navbar {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    background-color: #5d85cb;
+    color: #fff;
+}
+
+#fake {
+    height: 60px;
+    width: 100%;
+    background: white;
+}

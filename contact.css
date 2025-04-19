@@ -1,0 +1,48 @@
+/* CONTACT PAGE STYLES (without navbar) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(contect.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    padding: 20px;
+    padding-top: 60px;
+    color:skyblue;
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    color: burlywood;
+    margin-bottom: 20px;
+    animation: slideIn 1s ease-out;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+@keyframes slideIn {
+    0% { transform: translateY(-20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
