@@ -1,0 +1,62 @@
+/* Image Gallery Layout */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Image Card Styling */
+  .image-card {
+    width: 480px;
+    text-align: center;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Image Styling */
+  .image-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Download Button Styling */
+  .download-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 14px 0;
+    background: #ff9800;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    border-top: 1px solid #e68900;
+    transition: background 0.3s ease;
+  }
+  
+  .download-btn:hover {
+    background: #e68900;
+  }
+  
+  .download-btn:active {
+    background: #d57a00;
+  }
+  
+  .page {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    padding: 40px 20px;
+    background: #f9f9f9;
+    margin-bottom: 40px;
+    border-radius: 12px;
+  }
+  
