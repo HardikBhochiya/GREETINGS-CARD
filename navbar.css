@@ -15,8 +15,8 @@
 }
 
 #logo img {
-    height: 45px;
-    width: auto;
+    height:auto;
+    width: 120px;
     object-fit: contain;
     background-color: transparent;
     border: none;
